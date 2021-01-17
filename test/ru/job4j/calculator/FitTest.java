@@ -5,11 +5,10 @@ import org.junit.Test;
 
 public class FitTest {
 
-    short in = 180;
-
     @Test
     public void manWeight() {
 
+        short in = 180;
         double expected = 92;
         double out      = Fit.manWeight(in);
         Assert.assertEquals(expected, out, 0.01);
@@ -18,6 +17,7 @@ public class FitTest {
     @Test
     public void womanWeight() {
 
+        short in = 180;
         double expected = 80.5;
         double out      = Fit.womanWeight(in);
         Assert.assertEquals(expected, out, 0.01);
